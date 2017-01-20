@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.dwwen.ui.MitraTextView
+    android:id="@+id/categoryName"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:textColor="@android:color/primary_text_light"
+    android:textSize="@dimen/abc_text_size_headline_material"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

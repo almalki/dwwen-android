@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/blog_detail"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layoutDirection="rtl">
+
+    <ProgressBar android:id="@+id/loading_progress" style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp" android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/mainView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/top_info">
+            <ImageView
+                android:id="@+id/blogImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/default_blog" />
+
+            <com.dwwen.ui.FTextView
+                android:id="@+id/fcLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/blogName"
+                android:singleLine="true"
+                android:text="@string/followers_count"
+                android:textSize="10sp"
+                android:layout_toEndOf="@id/blogImage" />
+
+            <com.dwwen.ui.FTextView
+                android:id="@+id/followersCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/fcLabel"
+                android:layout_below="@id/blogName"
+                android:singleLine="true"
+                android:text="-"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp"/>
+
+            <com.dwwen.ui.FTextView
+                android:id="@+id/blogName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_toEndOf="@id/blogImage"
+                android:textDirection="rtl"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="22sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_below="@+id/top_info">
+
+            <TextView
+                android:id="@+id/blogDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_alignParentTop="true"
+                android:textDirection="rtl"
+                android:layout_above="@id/blogDescription"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_icon="@drawable/ic_fab_star"
+            fab:fab_colorNormal="@color/pink_pressed"
+            fab:fab_colorPressed="@color/pink"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:textSize="18sp"
+            android:layout_alignBottom="@id/top_info"
+            android:layout_marginBottom="-38dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

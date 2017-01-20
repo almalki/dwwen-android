@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">دوّن</string>
+    <string name="preference_file_key">com.dwwen.GLOBAL_PREFERENCES</string>
+    <string name="title_activity_main">دوّن</string>
+    <string name="title_section1">تدوينات</string>
+    <string name="title_section2">مدونات</string>
+    <string name="title_section3">المفضلة</string>
+    <string name="title_section4">إضافة مدونة</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ok">موافق</string>
+    <string name="action_settings">اعدادات</string>
+    <string name="title_activity_timeline">دوّن</string>
+    <string name="logout">خروج</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example"></string>
+    <string name="title_blog_list"></string>
+    <string name="title_blog_detail"></string>
+    <string name="loading"></string>
+    <string name="help">مساعدة</string>
+    <string name="legal">تراخيص قانونية</string>
+    <string name="followers_count">عدد المتابعين:</string>
+    <string name="title_activity_post"></string>
+    <string name="action_like">إعجاب</string>
+    <string name="action_fav">إضافة للمفضلة</string>
+    <string name="text_search">بحث</string>
+    <string name="title_activity_favorites">المفضلة</string>
+    <string name="unknown_error">حدث خطأ غير متوقع</string>
+    <string name="show_posts">عرض التدوينات</string>
+    <string name="following">متابعة</string>
+    <string name="not_following_msg">انت لا تتابع اي مدونة في الوقت الحالي.</string>
+    <string name="show_blogs">عرض المدونات</string>
+    <string name="title_activity_blog_posts"></string>
+    <string name="title_activity_post_search"></string>
+    <string name="no_results">لا يوجد نتائج للعرض</string>
+    <string name="title_activity_legal">Legal</string>
+    <string name="title_activity_read_post"></string>
+    <string name="open_in_browser">قراءة في المتصفح</string>
+    <string name="empty_favorite_list">لم تقم بإضافة اي تدوينة للمفضلة</string>
+</resources>

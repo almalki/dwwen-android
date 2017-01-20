@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="blog_name">اسم المدونة</string>
+    <string name="blog_url">رابط المدونة</string>
+    <string name="rss_url">رابط خلاصات RSS</string>
+    <string name="description">الوصف</string>
+    <string name="icon">أيقونة</string>
+    <string name="pick_image">اختيار صورة</string>
+    <string name="title_activity_add_blog">إضافة مدونة</string>
+    <string name="add_blog">إضافة المدونة</string>
+    <string name="categories">التصنيف</string>
+    <string name="mandatory_category">يجب اختيار تصنيف واحد على الاقل</string>
+
+    <string name="blog_added_successfully">تمت اضافة المدونة بنجاح</string>
+</resources>

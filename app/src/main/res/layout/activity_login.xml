@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    tools:context=".LoginActivity">
+
+    <!-- Login progress -->
+
+    <ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp" android:visibility="gone" />
+
+    <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl">
+
+        <LinearLayout android:id="@+id/email_login_form" android:layout_width="match_parent"
+            android:layout_margin="30dp"
+            android:layout_height="wrap_content" android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="182dp"
+                android:layout_height="104dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/logo_trans_large"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText android:id="@+id/email" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="@string/prompt_login"
+                android:inputType="textEmailAddress" android:maxLines="1"
+                android:singleLine="true" android:layout_marginTop="20dp"/>
+
+            <EditText android:id="@+id/password" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short" android:textAlignment="viewStart"
+                android:imeOptions="actionUnspecified" android:inputType="textPassword"
+                android:maxLines="1" android:singleLine="true" />
+
+            <Button android:id="@+id/email_sign_in_button" style="?android:textAppearanceSmall"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:text="@string/action_sign_in"
+                android:textStyle="bold" />
+
+            <com.dwwen.ui.FTextView
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="startRegistration"
+                android:textColor="@color/pink"
+                android:text="@string/register_message"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+
+

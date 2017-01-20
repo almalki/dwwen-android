@@ -1,0 +1,112 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:textAlignment="viewStart"
+    tools:context="com.dwwen.post.PostActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/postView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/blogImage"
+                android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:transitionName="transition_post_blog_image"
+                android:src="@drawable/default_blog"
+                />
+
+            <com.dwwen.ui.MitraTextView
+                android:id="@+id/blogName"
+                android:layout_toEndOf="@id/blogImage"
+                android:layout_toRightOf="@id/blogImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:transitionName="transition_post_blog_name"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/publishDate"
+                android:layout_toEndOf="@+id/blogImage"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginBottom="2dp"
+                android:textSize="10sp"
+                android:textDirection="rtl"
+                android:transitionName="transition_post_date"
+                android:layout_below="@+id/blogName"
+                android:layout_above="@+id/postImage"/>
+
+            <ImageView
+                android:id="@+id/postImage"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/postTitle"
+                android:transitionName="transition_post_image"
+                android:scaleType="fitXY"/>
+
+            <com.dwwen.ui.FTextView
+                android:id="@+id/postTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/blogImage"
+                android:gravity="start"
+                android:transitionName="transition_post_title"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="21sp" />
+
+            <ProgressBar android:id="@+id/loading_progress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/postImage"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/postBody"
+                android:layout_below="@id/postImage">
+
+                <TextView
+                    android:id="@+id/postContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="18sp"/>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/actins_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@id/postContent"
+                    android:layout_centerHorizontal="true"
+                    android:minHeight="?attr/actionBarSize"
+                    android:background="@color/white_pressed"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

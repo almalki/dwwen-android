@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">البريد الالكتروني</string>
+    <string name="prompt_username">اسم المستخدم</string>
+    <string name="prompt_login">اسم المستخدم او البريد الالكتروني</string>
+    <string name="prompt_password">كلمة السر</string>
+    <string name="action_sign_in">دخول</string>
+    <string name="action_register">تسجيل</string>
+    <string name="register_message">ليس لديك حساب؟ سجل الآن</string>
+    <string name="action_sign_in_short">دخول</string>
+
+    <string name="error_invalid_email">البريد الالكتروني غير صحيح</string>
+    <string name="error_invalid_username">اسم المستخدم يجب ان يكون ثلاثة احرف على الاقل</string>
+    <string name="error_invalid_password">كلمة السر قصيرة جدا</string>
+    <string name="error_incorrect_password">كلمة السر غير صحيحة</string>
+    <string name="error_field_required">هذا الحقل مطلوب</string>
+
+    <string name="password_changed_successfully">تم تغيير كلمة السر بنجاح</string>
+
+</resources>

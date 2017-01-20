@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dwwen" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".common.ShipFasterApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.LoginActivity"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_timeline"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".search.PostSearchActivity" />
+        </activity>
+        <activity
+            android:name=".blogs.BlogListActivity"
+            android:label="@string/title_blog_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".blogs.BlogDetailActivity"
+            android:label="@string/title_blog_detail"
+            android:screenOrientation="portrait" >
+
+            <!--
+                android:parentActivityName=".blogs.BlogListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dwwen.blogs.BlogListActivity" />
+            -->
+        </activity>
+        <activity
+            android:name=".post.PostActivity"
+            android:label="@string/title_activity_post"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".registration.RegistrationActivity"
+            android:label="@string/action_register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".favroites.FavoritesActivity"
+            android:label="@string/title_activity_favorites"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".blogs.CategoriesActivity"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".auth.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="dwwen_change_password" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".blogs.AddBlogActivity"
+            android:label="@string/title_activity_add_blog"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".blogposts.BlogPostsActivity"
+            android:label="@string/title_activity_blog_posts"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".search.PostSearchActivity"
+            android:label="@string/title_activity_post_search"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".settings.LegalActivity"
+            android:label="@string/title_activity_legal" >
+            <intent-filter>
+                <action android:name="open_legal" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".post.ReadPostActivity"
+            android:label="@string/title_activity_read_post" >
+        </activity>
+    </application>
+
+</manifest>
